@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elvo.controller.inventory.LadiesCollectionFormController">
+   <children>
+      <SplitPane dividerPositions="0.2342893293968789" prefHeight="460.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="665.0" prefWidth="219.0" style="-fx-background-color: #1d1b20;">
+               <children>
+                  <Text fill="#ece6e6" layoutX="7.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify Store (PVT) Ltd" textAlignment="JUSTIFY" wrappingWidth="212.53668212890625" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-0.53668212890625">
+                     <font>
+                        <Font name="Verdana" size="15.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="18.4" layoutY="66.0" prefHeight="168.0" prefWidth="183.0" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="66.0">
+                     <children>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Dashboard" textFill="#ccbaba" VBox.vgrow="ALWAYS" />
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Place Order" textFill="#ccbaba">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Previous Orders" textFill="#ccbaba">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Returned Orders" textFill="#ccbaba">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Separator>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="19.2" layoutY="247.0" prefHeight="154.0" prefWidth="182.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                     <children>
+                        <Text fill="#efe5e5" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Verdana" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #50445c;" styleClass="round-button" stylesheets="@../styles/login.css" text="Ladies Section" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Gents Section" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Kids Section" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Separator>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="19.2" layoutY="411.0" prefHeight="216.0" prefWidth="181.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                     <children>
+                        <Text fill="#efe5e5" strokeType="OUTSIDE" strokeWidth="0.0" text="Suppliers" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Verdana" size="12.0" />
+                           </font>
+                        </Text>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Supplier List" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <JFXButton prefHeight="40.0" prefWidth="220.0" styleClass="round-button" stylesheets="@../styles/login.css" text="Reports" textFill="#ccbaba" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <JFXButton onAction="#btnUserList" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: blue;" styleClass="round-button" stylesheets="@../styles/login.css" text="User List" textFill="#ccbaba">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="19.0" layoutY="534.0" prefHeight="50.0" prefWidth="182.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="18.599999999999994">
+                     <children>
+                        <JFXButton prefHeight="60.0" prefWidth="182.0" stylesheets="@../styles/login.css" text="Logout" textFill="#ccbaba" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="round-button" />
+                              <String fx:value="exit-button" />
+                           </styleClass>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="100.0" style="-fx-background-color: #f4f4f4;" styleClass="dash-buttons">
+               <children>
+                  <AnchorPane fx:id="ancButtonPanel" layoutY="6.0" prefHeight="666.0" prefWidth="731.0">
+                     <children>
+                        <JFXButton layoutX="640.0" layoutY="607.0" onAction="#btnAddItemOnAction" text="Add" />
+                     </children>
+                  </AnchorPane>
+                  <HBox layoutX="24.0" layoutY="149.0" prefHeight="183.0" prefWidth="696.0">
+                     <children>
+                        <JFXButton onAction="#btnTopsOnAction" prefHeight="197.0" prefWidth="400.0" style="-fx-border-color: green;" text="Tops" />
+                        <JFXButton onAction="#btnTrousersOnAction" prefHeight="194.0" prefWidth="400.0" style="-fx-border-color: green;" text="Trousers" />
+                        <JFXButton onAction="#btnSkirtsOnAction" prefHeight="198.0" prefWidth="400.0" style="-fx-border-color: green;" text="Skirts" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="24.0" layoutY="332.0" prefHeight="183.0" prefWidth="696.0">
+                     <children>
+                        <JFXButton onAction="#btnFrocksOnAction" prefHeight="197.0" prefWidth="400.0" style="-fx-border-color: green;" text="Frocks" />
+                        <JFXButton onAction="#btnSareesOnAction" prefHeight="194.0" prefWidth="400.0" style="-fx-border-color: green;" text="Sarees" />
+                        <JFXButton onAction="#btnOthersOnAction" prefHeight="198.0" prefWidth="400.0" style="-fx-border-color: green;" text="Others" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <AnchorPane fx:id="ancAddItem" layoutX="230.0" layoutY="94.0" prefHeight="539.0" prefWidth="714.0" style="-fx-background-color: white; -fx-border-color: black;" visible="false">
+         <children>
+            <JFXTextField fx:id="txtItemName" layoutX="67.0" layoutY="119.0" prefHeight="26.0" prefWidth="303.0" promptText="Item Name" />
+            <ComboBox fx:id="comboCategory" layoutX="67.0" layoutY="184.0" prefWidth="150.0" promptText="Category" />
+            <ComboBox fx:id="comboSubCategory" layoutX="67.0" layoutY="244.0" prefWidth="150.0" promptText="Sub Category" />
+            <ComboBox fx:id="comboSupplier" layoutX="67.0" layoutY="300.0" prefWidth="150.0" promptText="Supplier" />
+            <ComboBox fx:id="comboSize" layoutX="248.0" layoutY="184.0" prefWidth="150.0" promptText="Size" />
+            <JFXTextField fx:id="txtStock" layoutX="67.0" layoutY="360.0" promptText="Stock" />
+            <JFXButton fx:id="btnAddItemImage" layoutX="248.0" layoutY="244.0" onAction="#btnAddImageOnAction" text="Add File" />
+            <JFXButton fx:id="btnAddItemTODb" layoutX="193.0" layoutY="431.0" onAction="#btnAddItemToDbOnAction" text="Add" />
+            <ImageView fx:id="itemImageView" fitHeight="360.0" fitWidth="270.0" layoutX="422.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton layoutX="649.0" layoutY="14.0" onAction="#btnCloseAddItemAncOnAction" text="close" />
+            <JFXTextField fx:id="txtPrice" layoutX="248.0" layoutY="373.0" promptText="Stock" text="Price" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
