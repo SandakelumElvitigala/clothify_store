@@ -1,0 +1,69 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="sales1" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f10c51e8-6331-4d26-940b-3ec23b941028">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+    <query language="SQL"><![CDATA[SELECT employee_email, SUM(total_amount) AS total_sales
+FROM orders
+WHERE status = 'ok'
+GROUP BY employee_email;]]></query>
+    <field name="employee_email" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="employee_email"/>
+        <property name="com.jaspersoft.studio.field.label" value="employee_email"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+    </field>
+    <field name="total_sales" class="java.lang.Double">
+        <property name="com.jaspersoft.studio.field.name" value="total_sales"/>
+        <property name="com.jaspersoft.studio.field.label" value="total_sales"/>
+    </field>
+    <group name="employee_email">
+        <expression><![CDATA[$F{employee_email}]]></expression>
+    </group>
+    <group name="total_sales">
+        <expression><![CDATA[$F{total_sales}]]></expression>
+    </group>
+    <background splitType="Stretch"/>
+    <title height="116" splitType="Stretch">
+        <element kind="textField" uuid="640d6902-1f8d-424e-b20f-48e3540163ff" x="460" y="97" width="110" height="16" pattern="MMMMM dd, yyyy">
+            <expression><![CDATA[new java.util.Date()]]></expression>
+        </element>
+        <element kind="textField" uuid="c112e0cb-09fc-4acf-83c9-97aac409e321" x="461" y="82" width="100" height="18" pattern="HH:mm">
+            <expression><![CDATA[new java.util.Date()]]></expression>
+        </element>
+        <element kind="rectangle" uuid="9686b4e5-9935-4a57-a207-ef1a2e039d93" x="-13" y="115" width="581" height="1" backcolor="#080707"/>
+        <element kind="staticText" uuid="43c0c1a9-74d2-4bf1-8380-c56f4ca7953b" x="0" y="80" width="221" height="35" fontSize="20.0" bold="true">
+            <text><![CDATA[Sales Report]]></text>
+        </element>
+        <element kind="staticText" uuid="912ee760-7b4a-4288-86a0-9544ec405b2b" x="63" y="12" width="410" height="51" fontName="Bodoni MT" fontSize="30.0" bold="true" hTextAlign="Center">
+            <text><![CDATA[Clothify Store]]></text>
+        </element>
+        <element kind="staticText" uuid="8a22fb78-aba4-4bcf-8331-c20a51662a39" x="235" y="45" width="100" height="30" fontSize="15.0">
+            <text><![CDATA[Panadura]]></text>
+        </element>
+    </title>
+    <pageHeader height="35" splitType="Stretch"/>
+    <columnHeader height="45" splitType="Stretch">
+        <element kind="staticText" uuid="b6fc5997-a23d-461c-a760-1e43a5b1d928" x="41" y="0" width="229" height="40" fontSize="15.0" bold="true">
+            <text><![CDATA[Employee Email]]></text>
+            <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7172ec5-1c70-43e1-8069-da70441c4bf2"/>
+        </element>
+        <element kind="staticText" uuid="8098ce8d-f7e8-48bb-9ad3-adb6abe9be89" x="384" y="0" width="106" height="40" fontSize="15.0" bold="true">
+            <text><![CDATA[Total Sales]]></text>
+            <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b0cff7d1-6368-48e2-90cc-8d21be1ea203"/>
+        </element>
+    </columnHeader>
+    <detail>
+        <band height="68" splitType="Stretch">
+            <element kind="textField" uuid="b8aaa3ab-84a5-422d-a081-581aeb7d6da4" x="41" y="10" width="229" height="50" fontSize="13.0" bold="true" hTextAlign="Left">
+                <expression><![CDATA[$F{employee_email}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7172ec5-1c70-43e1-8069-da70441c4bf2"/>
+            </element>
+            <element kind="textField" uuid="819ab128-bb79-4a89-9f6d-250164ced889" x="384" y="10" width="146" height="50" fontSize="13.0" bold="true" hTextAlign="Left">
+                <expression><![CDATA[$F{total_sales}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b0cff7d1-6368-48e2-90cc-8d21be1ea203"/>
+            </element>
+        </band>
+    </detail>
+    <columnFooter height="1" splitType="Stretch"/>
+    <pageFooter splitType="Stretch"/>
+    <summary height="6" splitType="Stretch"/>
+</jasperReport>

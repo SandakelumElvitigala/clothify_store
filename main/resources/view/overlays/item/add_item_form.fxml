@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="464.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elvo.controller.overlays.item.AddItemFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" prefHeight="18.0" prefWidth="133.0" text="Add an Item">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemName" layoutX="26.0" layoutY="91.0" prefHeight="26.0" prefWidth="203.0" promptText="Item Name" />
+      <JFXTextField fx:id="txtStock" layoutX="27.0" layoutY="279.0" prefHeight="26.0" prefWidth="203.0" promptText="Stock" />
+      <ComboBox fx:id="comboCategory" layoutX="26.0" layoutY="133.0" prefWidth="150.0" promptText="Category" />
+      <ComboBox fx:id="comboSubCategory" layoutX="26.0" layoutY="167.0" prefWidth="150.0" promptText="Sub Category" />
+      <ComboBox fx:id="comboSize" layoutX="26.0" layoutY="202.0" prefWidth="150.0" promptText="Size" />
+      <ComboBox fx:id="comboSupplier" layoutX="25.0" layoutY="237.0" prefWidth="150.0" promptText="Supplier" />
+      <JFXTextField fx:id="txtPrice" layoutX="28.0" layoutY="312.0" prefHeight="26.0" prefWidth="203.0" promptText="Price (LKR)" />
+      <JFXButton fx:id="btnAddImage" layoutX="297.0" layoutY="297.0" prefHeight="56.0" prefWidth="203.0" style="-fx-background-color: blue;" text="Add an Image" textFill="#faf3f3" />
+      <ImageView fx:id="imgImageView" fitHeight="199.0" fitWidth="200.0" layoutX="299.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <Separator layoutX="251.0" layoutY="23.0" orientation="VERTICAL" prefHeight="339.0" prefWidth="5.0" />
+      <JFXButton fx:id="btnAddItem" layoutX="263.0" layoutY="400.0" onAction="#btnAddItemOnAction" prefHeight="46.0" prefWidth="236.0" style="-fx-background-color: green;" text="Add " textFill="#ece7e7" />
+   </children>
+</AnchorPane>

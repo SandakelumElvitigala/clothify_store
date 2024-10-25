@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="434.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elvo.controller.overlays.supplier.SupplierListFormController">
+   <children>
+      <ScrollPane layoutX="20.0" layoutY="74.4" prefHeight="289.0" prefWidth="638.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="74.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <TableView fx:id="supplierTable" prefHeight="274.0" prefWidth="638.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="60.799958765506744" text="ID" />
+                      <TableColumn fx:id="colName" prefWidth="138.40001678466797" text="Name" />
+                        <TableColumn fx:id="colCompany" prefWidth="187.19998168945312" text="Company" />
+                        <TableColumn fx:id="colEmail" prefWidth="235.199951171875" text="Email" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="25.0" layoutY="21.0" prefHeight="37.0" prefWidth="134.0" text="Suppliers" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="440.80000000000007" AnchorPane.topAnchor="21.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnEdit" layoutX="506.0" layoutY="379.0" onAction="#btnEditOnAction" prefHeight="38.0" prefWidth="159.0" text="Edit" visible="false" AnchorPane.bottomAnchor="16.6" AnchorPane.rightAnchor="22.80000000000001" />
+      <JFXButton fx:id="btnDelete" layoutX="332.0" layoutY="378.0" onAction="#btnDeleteOnAction" prefHeight="38.0" prefWidth="159.0" text="Delete" visible="false" AnchorPane.bottomAnchor="16.6" AnchorPane.rightAnchor="196.8" />
+   </children>
+</AnchorPane>

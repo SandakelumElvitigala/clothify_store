@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="337.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elvo.controller.overlays.supplier.AddSuppliersFormController">
+   <children>
+      <Label layoutX="32.0" layoutY="31.0" text="Add Supplier">
+         <font>
+            <Font name="Nirmala UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="52.0" layoutY="94.0" prefHeight="26.0" prefWidth="300.0" promptText="Supplier Name" />
+      <JFXTextField fx:id="txtCompany" layoutX="52.0" layoutY="147.0" prefHeight="26.0" prefWidth="300.0" promptText="Company" />
+      <JFXTextField fx:id="txtEmail" layoutX="52.0" layoutY="201.0" prefHeight="26.0" prefWidth="300.0" promptText="Email" />
+      <JFXButton fx:id="btnAdd" layoutX="250.0" layoutY="261.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: green;" text="Add" />
+   </children>
+</AnchorPane>

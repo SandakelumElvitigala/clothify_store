@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elvo.controller.login.LoginFormController">
+   <right>
+      <VBox prefWidth="400.0" styleClass="vbox_background_right" stylesheets="@../styles/login.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="79.0" prefWidth="330.0" />
+            <AnchorPane prefHeight="287.0" prefWidth="330.0">
+               <children>
+                  <JFXTextField fx:id="txtEmailLogin" focusColor="#f9fafc" layoutX="50.0" layoutY="85.0" prefHeight="26.0" prefWidth="219.0" promptText="Enter Your Email Address" styleClass="loginText" stylesheets="@../styles/login.css" text="kalpaselvitigala@gmail.com" unFocusColor="#e1dcdc" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="61.19999999999999">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="txtPasswordLogin" focusColor="#f1f2f7" layoutX="51.0" layoutY="130.0" prefHeight="26.0" prefWidth="218.0" promptText="Enter Your Password" styleClass="loginText" stylesheets="@../styles/login.css" text="\@Kalpa123" unFocusColor="#c9c3c3" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="61.799999999999955">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton buttonType="RAISED" layoutX="30.0" layoutY="178.0" onAction="#btnForgotPassword" prefHeight="26.0" prefWidth="134.0" text="forgot password" textFill="#7465e7" />
+                  <HBox layoutX="50.4" layoutY="219.0" prefHeight="32.0" prefWidth="230.0" AnchorPane.leftAnchor="50.4" AnchorPane.rightAnchor="50.39999999999998">
+                     <children>
+                        <JFXButton onAction="#btnExit" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: red;" text="Exit" />
+                        <JFXButton buttonType="RAISED" onAction="#btnLogin" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: green;" text="Login" />
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" prefHeight="84.0" prefWidth="330.0" text="User Login" textAlignment="JUSTIFY" textFill="#faf7f7" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="5.684341886080802E-14" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="41.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefWidth="449.0" styleClass="vbox_background_center" stylesheets="@../styles/login.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="486.0" prefWidth="380.0">
+               <children>
+                  <AnchorPane fx:id="pnlEnterOtp" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="359.0" style="-fx-background-color: white;" visible="false">
+                     <children>
+                        <Label layoutX="14.0" layoutY="21.0" text="Emai Verification" textAlignment="CENTER">
+                           <font>
+                              <Font name="Verdana" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="58.0" text="We have sent an OTP to your email" />
+                        <TextField fx:id="txtOtp" layoutX="28.0" layoutY="84.0" prefHeight="32.0" prefWidth="302.0" promptText="Enter the OTP" />
+                        <Label fx:id="lblOtpTimer" prefHeight="17.0" prefWidth="73.0" />
+                        <JFXButton layoutX="257.0" layoutY="160.0" onAction="#btnOtpProceed" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: green;" text="Proceed" />
+                        <JFXButton layoutX="317.0" layoutY="18.0" onAction="#btnOtpClose" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: red;" text="X" textFill="#f2ecec">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="pnlCreatePassword" layoutX="32.0" layoutY="13.0" prefHeight="322.0" prefWidth="308.0" style="-fx-background-color: white;" visible="false">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="178.0" text="Create new password">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="txtNewPassword" layoutX="42.0" layoutY="70.0" prefHeight="25.0" prefWidth="206.0" promptText="Enter the new Password" />
+                        <PasswordField fx:id="txtConfirmNewPassword" layoutX="41.0" layoutY="112.0" prefHeight="25.0" prefWidth="206.0" promptText="Confirm your password" />
+                        <Label fx:id="lblPasswordShouldContain" layoutX="42.0" layoutY="156.0" text="Password should Contain," />
+                        <Label fx:id="lblEightCharacters" layoutX="64.0" layoutY="183.0" text="01. At least 8 characters" textFill="#f20b0b" />
+                        <Label fx:id="lblOneUppercase" layoutX="64.0" layoutY="201.0" text="02. At least one Uppercase" textFill="#ec0a0a" />
+                        <Label fx:id="lblOneSymbol" layoutX="64.0" layoutY="219.0" text="03. At least one symbol" textFill="#ef0606" />
+                        <JFXButton fx:id="btnCreateNewPassword" disable="true" layoutX="153.0" layoutY="259.0" onAction="#btnCreateNewPassword" style="-fx-background-color: green;" text="Create new Password" />
+                        <JFXButton layoutX="84.0" layoutY="259.0" onAction="#btnExitFromCreateNewPassword" style="-fx-background-color: red;" text="Cancel" />
+                        <Label fx:id="lblPasswordMatching" layoutX="95.0" layoutY="138.0" prefHeight="18.0" prefWidth="151.0" textAlignment="RIGHT" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

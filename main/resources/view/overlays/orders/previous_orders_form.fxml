@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="509.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elvo.controller.overlays.orders.PreviousOrdersFormController">
+   <children>
+      <Label layoutX="20.0" layoutY="23.0" prefHeight="32.0" prefWidth="171.0" text="Previous Orders">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPreviousOrders" layoutX="20.0" layoutY="78.0" prefHeight="367.0" prefWidth="675.0" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="78.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="54.400028228759766" text="Order_ID" />
+          <TableColumn fx:id="colCustEmail" prefWidth="182.39996337890625" text="Customer_Email" />
+            <TableColumn fx:id="colAmount" prefWidth="102.40000915527344" text="Amount" />
+            <TableColumn fx:id="colEmpEmail" prefWidth="179.2000732421875" text="Employee_Email" />
+            <TableColumn fx:id="colPlacedAt" minWidth="0.0" prefWidth="152.800048828125" text="Placed_At" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="537.0" layoutY="452.0" onAction="#btnReturnOnAction" prefHeight="46.0" prefWidth="158.0" style="-fx-background-color: #ff4237;" text="Return Order" />
+   </children>
+</AnchorPane>

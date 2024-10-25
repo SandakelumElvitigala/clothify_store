@@ -1,0 +1,51 @@
+.vbox_background_center{
+    -fx-background-image: url("images/bg2.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.vbox_background_right{
+    -fx-background-image: url("images/bg1.jpg");
+}
+
+.loginText{
+    -fx-text-fill: white;
+}
+
+.round-button {
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-border-radius: 30;
+    -fx-padding: 10 20;
+}
+
+.exit-button {
+    -fx-background-color: red;
+}
+
+.round-button:hover{
+    -fx-background-color: #50445c;
+    -fx-padding: 12 22;
+}
+
+.dashButtons{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-color: #7a49a8;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dashButtons:hover{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color:#875bae;
+    -fx-text-fill: white;
+}
+
+.tab{
+    background-color: black;
+}

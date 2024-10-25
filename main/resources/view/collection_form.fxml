@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #393c3e;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elvo.controller.inventory.CollectionFormController">
+   <children>
+      <AnchorPane prefHeight="762.0" prefWidth="94.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton layoutX="1.0" layoutY="71.0" prefHeight="50.0" prefWidth="87.0" text="." textFill="#00000006">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="23.4" layoutY="61.0" onAction="#btnAddAnOrderOnAction" prefHeight="51.0" prefWidth="24.0" text="." AnchorPane.leftAnchor="23.4" AnchorPane.rightAnchor="18.999999999999986">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/checkout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip autoHide="true" contentDisplay="RIGHT" text="Create Order" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="19.2" layoutY="117.0" onAction="#btnPreviousOrdersOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="12.0">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/history.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip contentDisplay="RIGHT" text="Previous Orders" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="20.2" layoutY="167.0" onAction="#btnReturnedOrdersOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.leftAnchor="19.2" AnchorPane.rightAnchor="12.0">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/refund.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip autoHide="true" contentDisplay="RIGHT" text="Returned Orders" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="6.0" layoutY="212.0" prefHeight="22.0" prefWidth="84.0" />
+            <JFXButton fx:id="btnOpenLadiesCollection" layoutX="19.2" layoutY="231.0" onAction="#btnOpenLadiesCollectionOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.leftAnchor="19.2" AnchorPane.rightAnchor="12.0">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/women.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip autoHide="true" contentDisplay="RIGHT" text="Ladies Collection" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnOpenGentsCollection" layoutX="18.2" layoutY="285.0" onAction="#btnOpenGentsCollectionOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.leftAnchor="18.2" AnchorPane.rightAnchor="12.800000000000011">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/young-man.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip autoHide="true" contentDisplay="RIGHT" text="Gents Collection" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnOpenKidsCollection" layoutX="18.2" layoutY="341.0" onAction="#btnOpenKidsCollectionOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.leftAnchor="18.2" AnchorPane.rightAnchor="12.800000000000011">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/children.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip autoHide="true" contentDisplay="RIGHT" text="Kids Collection" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="6.0" layoutY="385.0" prefHeight="22.0" prefWidth="84.0" />
+            <JFXButton layoutX="18.2" layoutY="404.0" onAction="#btnSuppliresOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.leftAnchor="18.2" AnchorPane.rightAnchor="12.800000000000011">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/supplier.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip autoHide="true" contentDisplay="RIGHT" text="Suppliers" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="5.0" layoutY="453.0" prefHeight="22.0" prefWidth="84.0" />
+            <JFXButton layoutX="17.2" layoutY="471.0" onAction="#btnStatsOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.leftAnchor="17.2" AnchorPane.rightAnchor="13.599999999999994">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/business-analyst.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip contentDisplay="RIGHT" text="Stats" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="17.2" layoutY="615.0" onAction="#btnExitOnAction" prefHeight="50.0" prefWidth="64.0" text="." AnchorPane.bottomAnchor="34.6" AnchorPane.leftAnchor="17.2" AnchorPane.rightAnchor="13.599999999999994">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+                     <image>
+                        <Image url="@../styles/images/menu/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="24.4" layoutY="11.0" onAction="#btnDashBoardOnAction" prefHeight="51.0" prefWidth="24.0" text="." AnchorPane.leftAnchor="24.4" AnchorPane.rightAnchor="17.60000000000001" AnchorPane.topAnchor="11.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/images/menu/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip autoHide="true" contentDisplay="RIGHT" text="Dashboard" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="96.0" prefHeight="74.0" prefWidth="904.0" style="-fx-background-color: #393c3e;" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblTitle" layoutX="18.0" layoutY="19.0" prefHeight="40.0" prefWidth="163.0" style="-fx-text-fill: white;" text="Ladies Collection">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="806.0" layoutY="25.0" onAction="#btnAddItemOnAction" text="Add" />
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="97.0" layoutY="86.0" prefHeight="539.0" prefWidth="898.0" style="-fx-background-color: #393c3e;" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="86.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="541.0" prefWidth="902.0" style="-fx-background-color: #393c3e;">
+               <children>
+                  <GridPane fx:id="gridCards" alignment="TOP_CENTER" prefHeight="586.0" prefWidth="896.0" AnchorPane.bottomAnchor="2.7999999999999545" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="332.5999816894531" minHeight="10.0" prefHeight="332.5999816894531" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
